@@ -150,22 +150,23 @@
         .booster-container-hover {
             width: 310px;
             height: 520px;
-            position: relative;
+            position: relative;            
+            background: transparent !important;
             transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.4s ease;
         }
 
         .booster-container-hover:hover {
             transform: rotateY(8deg) rotateX(4deg) translateY(-8px);
-            filter: drop-shadow(-20px 40px 30px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 35px rgba(56, 189, 248, 0.4));
+            filter: none !important;
         }
 
         .custom-booster-pack {
             width: 310px;
             height: 520px;
             position: relative;
-            background: transparent;
+            background: transparent !important;
             border-radius: 8px;
-            filter: drop-shadow(0 20px 25px rgba(0, 0, 0, 0.7));
+            filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.75));
 }
 
         .booster-bg-img {
@@ -182,7 +183,8 @@
             width: 310px; height: 60px;
             z-index: 40;
             pointer-events: none;
-            overflow: hidden;
+            overflow: hidden;    
+            background: transparent !important;
             clip-path: polygon(
                 0% 0%, 100% 0%,
                 100% 45px, 85% 55px, 70% 48px, 55% 58px, 40% 46px, 25% 56px, 10% 48px, 0% 55px
@@ -197,6 +199,7 @@
             position: absolute;
             top: 0;
             left: 0;
+            background: transparent !important;
         }
 
         /* Corps principal du paquet après déchirure */
@@ -204,6 +207,7 @@
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             z-index: 10;
+            background: transparent !important;
             clip-path: polygon(
                 0% 55px, 10% 48px, 25% 56px, 40% 46px, 55% 58px, 70% 48px, 85% 55px, 100% 45px,
                 100% 100%, 0% 100%
@@ -215,6 +219,7 @@
             width: 310px;
             height: 520px;
             object-fit: cover;
+            background: transparent !important;
         }
 
         .foil-reflection {
